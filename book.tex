@@ -1,0 +1,332 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{book}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={A Minimal Book Example},
+  pdfauthor={Yihui Xie},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{booktabs}
+\usepackage{siunitx}
+%\usepackage{amssymb,amsmath}
+\usepackage[french]{babel}
+\usepackage{eurosym}
+\newtheorem{definition}{Définition}
+\newtheorem{theorem}{A retenir}
+
+
+
+\renewcommand\thesection       {\Roman{section}.}
+\renewcommand\thesubsection    {\thesection \arabic{subsection}.}
+\renewcommand\thesubsubsection {\thesubsection \alph{subsubsection})}
+\renewcommand\theparagraph     {\thesubsubsection.\arabic{paragraph}}
+\renewcommand\thesubparagraph  {\theparagraph.\arabic{subparagraph}}
+\setcounter{secnumdepth}{4}
+\def\tightlist{}
+\newcommand{\fiche}[3]{
+	\begin{center}
+		\textsc{#1}\\
+		#2\hfill\textit{#3}
+	\end{center}
+	\hrule\vspace{\baselineskip}
+}
+
+\newcounter{numeroexo}
+\newcommand{\exo}{\par\noindent\stepcounter{numeroexo}
+	\hspace{-.25cm}\fbox{\textbf{Exercice \arabic{numeroexo}}}\quad}
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[]{natbib}
+\bibliographystyle{apalike}
+
+\title{A Minimal Book Example}
+\author{Yihui Xie}
+\date{2021-06-11}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{prerequisites}{%
+\chapter{Prerequisites}\label{prerequisites}}
+
+This is a \emph{sample} book written in \textbf{Markdown}. You can use anything that Pandoc's Markdown supports, e.g., a math equation \(a^2 + b^2 = c^2\).
+
+The \textbf{bookdown} package can be installed from CRAN or Github:
+
+\exo
+
+\hypertarget{sous-section}{%
+\section{sous section}\label{sous-section}}
+
+\hypertarget{sou-sous-sedctpo}{%
+\subsection{sou sous sedctpo,}\label{sou-sous-sedctpo}}
+
+emzfe
+\begin{theorem}
+\protect\hypertarget{thm:unnamed-chunk-1}{}{\label{thm:unnamed-chunk-1} }Here is my theorem.
+\end{theorem}
+
+\begin{definition}
+\protect\hypertarget{def:unnamed-chunk-2}{}{\label{def:unnamed-chunk-2} }Un court circuit est un circuit court..
+\end{definition}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{install.packages}\NormalTok{(}\StringTok{"bookdown"}\NormalTok{)}
+\CommentTok{\# or the development version}
+\CommentTok{\# devtools::install\_github("rstudio/bookdown")}
+\end{Highlighting}
+\end{Shaded}
+
+Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading \texttt{\#}.
+
+To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.org/tinytex/}.
+
+\hypertarget{duxe9monstration}{%
+\chapter*{Démonstration}\label{duxe9monstration}}
+\addcontentsline{toc}{chapter}{Démonstration}
+
+\hypertarget{grand-titre}{%
+\section{Grand titre}\label{grand-titre}}
+
+\hypertarget{sous-titre}{%
+\subsection{Sous titre}\label{sous-titre}}
+
+\hypertarget{sousous-titre}{%
+\subsubsection{Sousous titre}\label{sousous-titre}}
+
+\exo
+
+\hypertarget{sous-section-1}{%
+\section{sous section}\label{sous-section-1}}
+
+\hypertarget{sou-sous-sedctpo-1}{%
+\subsection{sou sous sedctpo,}\label{sou-sous-sedctpo-1}}
+
+emzfe
+
+\begin{definition}
+\protect\hypertarget{def:unnamed-chunk-6}{}{\label{def:unnamed-chunk-6} }Un court circuit est un circuit court..
+\end{definition}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{install.packages}\NormalTok{(}\StringTok{"bookdown"}\NormalTok{)}
+\CommentTok{\# or the development version}
+\CommentTok{\# devtools::install\_github("rstudio/bookdown")}
+\end{Highlighting}
+\end{Shaded}
+
+Et voici une équation inline \(E=mc^2\). Affichage d'un résultat avec SI units: \(\SI{3.2e12}{\kilo\gram\per\second}\). Ne fonctionne pas en HTML..
+
+Equation en ligne \[2x  = 3 -\sqrt{2}\]
+\begin{align}
+x &= 2x +5 \\
+-x &= 5 \\
+x &= -5 
+\end{align}
+
+Les vecteurs colonnes miam:
+\[\overrightarrow{v(t)} = \begin{pmatrix}v_x(t) &=& x'(t)\\
+v_y(t) &=& y'(t)
+\end{pmatrix}\]
+
+Insérer une image en utilisant le code markdown
+\texttt{!{[}image{]}(figures/fig.png)}
+
+\begin{figure}
+\centering
+\includegraphics{figures/fig.png}
+\caption{image}
+\end{figure}
+
+En modifiant la largeur: 200px
+\includegraphics{figures/fig.png}\{ width: 200px; \}
+
+En utilisant knitr:
+
+\includegraphics[width=0.5\linewidth]{figures/fig}
+
+Figures and tables with captions will be placed in \texttt{figure} and \texttt{table} environments, respectively
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{knitr}\SpecialCharTok{::}\FunctionTok{include\_graphics}\NormalTok{(}\StringTok{"figures/fig.png"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{figures/fig} 
+
+}
+
+\caption{Here is a nice figure!}\label{fig:nice-fig}
+\end{figure}
+
+\newpage
+
+Figures and tables with captions will be placed in \texttt{figure} and \texttt{table} environments, respectively
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{knitr}\SpecialCharTok{::}\FunctionTok{include\_graphics}\NormalTok{(}\StringTok{"figures/fig.png"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{figures/fig} 
+
+}
+
+\caption{Here is a nice figure!}\label{fig:unnamed-chunk-8}
+\end{figure}
+
+\hypertarget{rappel-de-chimie}{%
+\chapter{Rappel de chimie}\label{rappel-de-chimie}}
+
+Liste des notions:
+- Dissolution (composé moléculaire / ionique)
+- Solution
+- Concentration
+- Dilution
+- Fiche ions, molécules à connaître
+
+\hypertarget{literature}{%
+\chapter{Literature}\label{literature}}
+
+Here is a review of existing methods.
+
+\hypertarget{methods}{%
+\chapter{Methods}\label{methods}}
+
+We describe our methods in this chapter.
+
+\hypertarget{applications}{%
+\chapter{Applications}\label{applications}}
+
+Some \emph{significant} applications are demonstrated in this chapter.
+
+\hypertarget{example-one}{%
+\section{Example one}\label{example-one}}
+
+\hypertarget{example-two}{%
+\section{Example two}\label{example-two}}
+
+\hypertarget{final-words}{%
+\chapter{Final Words}\label{final-words}}
+
+We have finished a nice book.
+
+  \bibliography{book.bib,packages.bib}
+
+\end{document}
