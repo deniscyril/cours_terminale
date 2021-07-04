@@ -164,89 +164,8 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
-\hypertarget{prerequisites}{%
-\chapter{Prerequisites}\label{prerequisites}}
-
-This is a \emph{sample} book written in \textbf{Markdown}. You can use anything that Pandoc's Markdown supports, e.g., a math equation \(a^2 + b^2 = c^2\).
-
-$4\times 3$
-\\
-
-\begin{figure}
-\centering
-\includegraphics{~/Desktop/termniale/figures/tasse-a-mesurer.png}
-\caption{Légende}
-\end{figure}
-
-\[E = mc^2\]
-
-The \textbf{bookdown} package can be installed from CRAN or Github:
-
-\exo
-
-\hypertarget{sous-section}{%
-\section{sous section}\label{sous-section}}
-
-\hypertarget{sou-sous-sedctpo}{%
-\subsection{sou sous sedctpo,}\label{sou-sous-sedctpo}}
-
-emzfe
-\begin{theorem}
-\protect\hypertarget{thm:unnamed-chunk-1}{}{\label{thm:unnamed-chunk-1} }Here is my theorem.
-\end{theorem}
-
-La mole est une unité de quantité de matière. C'est un nombre de choses.
-Dans une mole il y a \(N_a\) (Nombre d'Avogadro) choses avec \(N_a=\SI{6,02e23}{\per\mole}\)\textbackslash{}
-\textit{Analogie : Dans une douzaine d'oeufs, il y a douze oeufs.\\
-Dans une mole d'oeufs, il y a $\SI{6,02e23}{}$ oeufs et dans une mole d'ions cuivre II, il y a $\SI{6,02e23}{}$  ions cuivre II.}\textbackslash{}
-
-\begin{definition}
-\protect\hypertarget{def:unnamed-chunk-2}{}{\label{def:unnamed-chunk-2} }Un court circuit est un circuit court..
-\end{definition}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{install.packages}\NormalTok{(}\StringTok{"bookdown"}\NormalTok{)}
-\CommentTok{\# or the development version}
-\CommentTok{\# devtools::install\_github("rstudio/bookdown")}
-\end{Highlighting}
-\end{Shaded}
-
-Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading \texttt{\#}.
-
-To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.org/tinytex/}.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\ImportTok{import}\NormalTok{ numpy }\ImportTok{as}\NormalTok{ np}
-\ImportTok{import}\NormalTok{ matplotlib.pyplot }\ImportTok{as}\NormalTok{ plt}
-\ImportTok{import}\NormalTok{ numpy.random }\ImportTok{as}\NormalTok{ rng}
-\ImportTok{import}\NormalTok{ matplotlib.cm }\ImportTok{as}\NormalTok{ cm}
-\ImportTok{from}\NormalTok{ matplotlib.animation }\ImportTok{import}\NormalTok{ FuncAnimation}
-
-\NormalTok{radii}\OperatorTok{=}\NormalTok{(rng.random(}\BuiltInTok{int}\NormalTok{(}\FloatTok{1e3}\NormalTok{))}\OperatorTok{+}\DecValTok{1}\NormalTok{)}\OperatorTok{**}\DecValTok{2}
-\NormalTok{iota}\OperatorTok{=}\DecValTok{2}\OperatorTok{*}\NormalTok{np.pi}\OperatorTok{*}\NormalTok{rng.random(}\BuiltInTok{int}\NormalTok{(}\FloatTok{1e3}\NormalTok{))}
-\NormalTok{x\_posit}\OperatorTok{=}\NormalTok{np.sqrt(radii)}\OperatorTok{*}\NormalTok{np.cos(iota)}
-\NormalTok{y\_posit}\OperatorTok{=}\NormalTok{np.sqrt(radii)}\OperatorTok{*}\NormalTok{np.sin(iota)}
-\NormalTok{plt.plot(x\_posit, y\_posit, }\StringTok{\textquotesingle{}go\textquotesingle{}}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## [<matplotlib.lines.Line2D object at 0x7f9cb5c52c18>]
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{plt.show()}
-\end{Highlighting}
-\end{Shaded}
-
-\includegraphics{book_files/figure-latex/unnamed-chunk-4-1.pdf}
-
 \hypertarget{rappels-de-chimie}{%
-\chapter*{Rappels de Chimie}\label{rappels-de-chimie}}
-\addcontentsline{toc}{chapter}{Rappels de Chimie}
+\chapter{Rappels de Chimie}\label{rappels-de-chimie}}
 
 \hypertarget{calcul-de-quantituxe9-de-matiuxe8re}{%
 \section{Calcul de quantité de matière}\label{calcul-de-quantituxe9-de-matiuxe8re}}
@@ -762,6 +681,34 @@ fzefok pzeokzepofk
 
 \end{blackbox}
 
+\hypertarget{ruxe9actions-acide-base}{%
+\chapter{Réactions Acide-Base}\label{ruxe9actions-acide-base}}
+
+\hypertarget{methods}{%
+\chapter{Methods}\label{methods}}
+
+We describe our methods in this chapter.
+
+\hypertarget{applications}{%
+\chapter{Applications}\label{applications}}
+
+Some \emph{significant} applications are demonstrated in this chapter.
+
+\hypertarget{example-one}{%
+\section{Example one}\label{example-one}}
+
+\hypertarget{example-two}{%
+\section{Example two}\label{example-two}}
+
+\hypertarget{final-words}{%
+\chapter{Final Words}\label{final-words}}
+
+We have finished a nice book.
+
+\hypertarget{demo}{%
+\chapter*{Demo}\label{demo}}
+\addcontentsline{toc}{chapter}{Demo}
+
 \hypertarget{suite}{%
 \section{Suite}\label{suite}}
 
@@ -792,7 +739,7 @@ emzfe
 
 
 \begin{theorem}
-<span class="theorem" id="thm:unnamed-chunk-6"><strong>\label{thm:unnamed-chunk-6} </strong></span>Here is my theorem. $E=mc^2$
+<span class="theorem" id="thm:unnamed-chunk-1"><strong>\label{thm:unnamed-chunk-1} </strong></span>Here is my theorem. $E=mc^2$
 \end{theorem}
 \end{verbatim}
 
@@ -805,7 +752,7 @@ emzfe
 \end{enumerate}
 
 \begin{definition}
-\protect\hypertarget{def:unnamed-chunk-7}{}{\label{def:unnamed-chunk-7} }Un court circuit est un circuit court..
+\protect\hypertarget{def:unnamed-chunk-2}{}{\label{def:unnamed-chunk-2} }Un court circuit est un circuit court..
 \end{definition}
 
 \begin{Shaded}
@@ -881,53 +828,62 @@ Figures and tables with captions will be placed in \texttt{figure} and \texttt{t
 
 }
 
-\caption{Here is a nice figure!}\label{fig:unnamed-chunk-9}
+\caption{Here is a nice figure!}\label{fig:unnamed-chunk-4}
 \end{figure}
 
-\hypertarget{rappel-de-chimie}{%
-\chapter{Rappel de chimie}\label{rappel-de-chimie}}
+\begin{figure}
+\centering
+\includegraphics{~/Desktop/termniale/figures/tasse-a-mesurer.png}
+\caption{Légende}
+\end{figure}
 
-Liste des notions:
+\begin{theorem}
+\protect\hypertarget{thm:unnamed-chunk-5}{}{\label{thm:unnamed-chunk-5} }Here is my theorem.
+\end{theorem}
 
-\begin{itemize}
-\tightlist
-\item
-  Dissolution (composé moléculaire / ionique)
-\item
-  Solution
-\item
-  Concentration
-\item
-  Dilution
-\item
-  Fiche ions, molécules à connaître
-\end{itemize}
+\begin{definition}
+\protect\hypertarget{def:unnamed-chunk-6}{}{\label{def:unnamed-chunk-6} }Un court circuit est un circuit court..
+\end{definition}
 
-\hypertarget{literature}{%
-\chapter{Literature}\label{literature}}
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{install.packages}\NormalTok{(}\StringTok{"bookdown"}\NormalTok{)}
+\CommentTok{\# or the development version}
+\CommentTok{\# devtools::install\_github("rstudio/bookdown")}
+\end{Highlighting}
+\end{Shaded}
 
-Here is a review of existing methods.
+Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading \texttt{\#}.
 
-\hypertarget{methods}{%
-\chapter{Methods}\label{methods}}
+To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.org/tinytex/}.
 
-We describe our methods in this chapter.
+\begin{Shaded}
+\begin{Highlighting}[]
+\ImportTok{import}\NormalTok{ numpy }\ImportTok{as}\NormalTok{ np}
+\ImportTok{import}\NormalTok{ matplotlib.pyplot }\ImportTok{as}\NormalTok{ plt}
+\ImportTok{import}\NormalTok{ numpy.random }\ImportTok{as}\NormalTok{ rng}
+\ImportTok{import}\NormalTok{ matplotlib.cm }\ImportTok{as}\NormalTok{ cm}
+\ImportTok{from}\NormalTok{ matplotlib.animation }\ImportTok{import}\NormalTok{ FuncAnimation}
 
-\hypertarget{applications}{%
-\chapter{Applications}\label{applications}}
+\NormalTok{radii}\OperatorTok{=}\NormalTok{(rng.random(}\BuiltInTok{int}\NormalTok{(}\FloatTok{1e3}\NormalTok{))}\OperatorTok{+}\DecValTok{1}\NormalTok{)}\OperatorTok{**}\DecValTok{2}
+\NormalTok{iota}\OperatorTok{=}\DecValTok{2}\OperatorTok{*}\NormalTok{np.pi}\OperatorTok{*}\NormalTok{rng.random(}\BuiltInTok{int}\NormalTok{(}\FloatTok{1e3}\NormalTok{))}
+\NormalTok{x\_posit}\OperatorTok{=}\NormalTok{np.sqrt(radii)}\OperatorTok{*}\NormalTok{np.cos(iota)}
+\NormalTok{y\_posit}\OperatorTok{=}\NormalTok{np.sqrt(radii)}\OperatorTok{*}\NormalTok{np.sin(iota)}
+\NormalTok{plt.plot(x\_posit, y\_posit, }\StringTok{\textquotesingle{}go\textquotesingle{}}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
 
-Some \emph{significant} applications are demonstrated in this chapter.
+\begin{verbatim}
+## [<matplotlib.lines.Line2D object at 0x7f90b4c4bbe0>]
+\end{verbatim}
 
-\hypertarget{example-one}{%
-\section{Example one}\label{example-one}}
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{plt.show()}
+\end{Highlighting}
+\end{Shaded}
 
-\hypertarget{example-two}{%
-\section{Example two}\label{example-two}}
-
-\hypertarget{final-words}{%
-\chapter{Final Words}\label{final-words}}
-
-We have finished a nice book.
+\includegraphics{book_files/figure-latex/unnamed-chunk-8-1.pdf}
 
   \bibliography{book.bib,packages.bib}
 
