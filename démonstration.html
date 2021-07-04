@@ -4,27 +4,27 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Démonstration | A Minimal Book Example</title>
-  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <title>Démonstration | Cours Physique-Chimie (Spécialité)</title>
+  <meta name="description" content="Elements de cours enseigné au lycée Georges Dumézil à Vernon" />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Démonstration | A Minimal Book Example" />
+  <meta property="og:title" content="Démonstration | Cours Physique-Chimie (Spécialité)" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta property="og:description" content="Elements de cours enseigné au lycée Georges Dumézil à Vernon" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Démonstration | A Minimal Book Example" />
+  <meta name="twitter:title" content="Démonstration | Cours Physique-Chimie (Spécialité)" />
   
-  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="twitter:description" content="Elements de cours enseigné au lycée Georges Dumézil à Vernon" />
   
 
-<meta name="author" content="Yihui Xie" />
+<meta name="author" content="Cyril DENIS" />
 
 
-<meta name="date" content="2021-06-11" />
+<meta name="date" content="2021-06-28" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +33,7 @@
   
 <link rel="prev" href="index.html"/>
 <link rel="next" href="rappel-de-chimie.html"/>
-<script src="libs/header-attrs-2.8/header-attrs.js"></script>
+<script src="libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -177,7 +177,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Minimal Book Example</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Cours Physique-Chimie (Spécialité)</a>
           </h1>
         </div>
 
@@ -204,18 +204,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>emzfe</p>
 
 <div class="theorem">
-<span id="thm:unnamed-chunk-5" class="theorem"><strong>A Retenir 1.2  </strong></span>Here is my theorem.
+<span id="thm:unnamed-chunk-1" class="theorem"><strong>A Retenir 1.1  </strong></span>Here is my theorem.
 </div>
+<pre><code>1. Réponse à la premier question $E=mc^2$</code></pre>
 
 <div class="definition">
-<span id="def:unnamed-chunk-6" class="definition"><strong>Définition 1.2  </strong></span>Un court circuit est un circuit court..
+<span id="def:unnamed-chunk-2" class="definition"><strong>Définition 1.1  </strong></span>Un court circuit est un circuit court..
 </div>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="démonstration.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;bookdown&quot;</span>)</span>
 <span id="cb2-2"><a href="démonstration.html#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># or the development version</span></span>
 <span id="cb2-3"><a href="démonstration.html#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># devtools::install_github(&quot;rstudio/bookdown&quot;)</span></span></code></pre></div>
 <p>Et voici une équation inline <span class="math inline">\(E=mc^2\)</span>. Affichage d’un résultat avec SI units: <span class="math inline">\(\SI{3.2e12}{\kilo\gram\per\second}\)</span>. Ne fonctionne pas en HTML..</p>
-<p>Equation en ligne <span class="math display">\[2x  = 3 -\sqrt{2}\]</span>
-<span class="math display">\[\begin{align}
+<p>Equation en ligne <span class="math display">\[2x  = 3 -\sqrt{2}\]</span></p>
+<p><span class="math display">\[\begin{align}
 x &amp;= 2x +5 \\
 -x &amp;= 5 \\
 x &amp;= -5 
@@ -230,14 +231,14 @@ v_y(t) &amp;=&amp; y&#39;(t)
 <img src="figures/fig.png" alt="" />
 <p class="caption">image</p>
 </div>
-<p>En modifiant la largeur: 200px
-<img src="figures/fig.png" alt="image" />{ width: 200px; }</p>
+<p>En modifiant la largeur: 200px</p>
+<p><img src="figures/fig.png" alt="image réduite 200 pix" />{width: 200px;}</p>
 <p>En utilisant knitr:</p>
 <p><img src="figures/fig.png" width="50%" /></p>
 <p>Figures and tables with captions will be placed in <code>figure</code> and <code>table</code> environments, respectively</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="démonstration.html#cb3-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">&quot;figures/fig.png&quot;</span>)</span></code></pre></div>
 <div class="figure" style="text-align: center"><span id="fig:nice-fig"></span>
-<img src="figures/fig.png" alt="Here is a nice figure!" width="80%" />
+<img src="figures/fig.png" alt="Here is a nice figure!" width="60%" />
 <p class="caption">
 Figure 1.1: Here is a nice figure!
 </p>
@@ -245,7 +246,7 @@ Figure 1.1: Here is a nice figure!
 <div style="page-break-after: always;"></div>
 <p>Figures and tables with captions will be placed in <code>figure</code> and <code>table</code> environments, respectively</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="démonstration.html#cb4-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">&quot;figures/fig.png&quot;</span>)</span></code></pre></div>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-8"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-4"></span>
 <img src="figures/fig.png" alt="Here is a nice figure!" width="80%" />
 <p class="caption">
 Figure 1.2: Here is a nice figure!

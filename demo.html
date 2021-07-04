@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapitre 3 Literature | Cours Physique-Chimie (Spécialité)</title>
+  <title>Demo | Cours Physique-Chimie (Spécialité)</title>
   <meta name="description" content="Elements de cours enseigné au lycée Georges Dumézil à Vernon" />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapitre 3 Literature | Cours Physique-Chimie (Spécialité)" />
+  <meta property="og:title" content="Demo | Cours Physique-Chimie (Spécialité)" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapitre 3 Literature | Cours Physique-Chimie (Spécialité)" />
+  <meta name="twitter:title" content="Demo | Cours Physique-Chimie (Spécialité)" />
   
   <meta name="twitter:description" content="Elements de cours enseigné au lycée Georges Dumézil à Vernon" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="rappels-de-chimie.html"/>
-<link rel="next" href="methods.html"/>
+<link rel="prev" href="references.html"/>
+
 <script src="libs/header-attrs-2.8/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -199,18 +199,90 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="literature" class="section level1" number="3">
-<h1><span class="header-section-number">Chapitre 3</span> Literature</h1>
-<p>Here is a review of existing methods.</p>
+<div id="demo" class="section level1 unnumbered">
+<h1>Demo</h1>
+<div id="suite" class="section level2" number="6.1">
+<h2><span class="header-section-number">6.1</span> Suite</h2>
+<ol style="list-style-type: decimal">
+<li>ljzoiej fizejf</li>
+<li>zefj zoeif</li>
+<li>zefij zef</li>
+</ol>
+<pre><code>
 
+#### Sousous titre
+
+
+
+\exo 
+
+## sous section
+### sou sous sedctpo,
+
+emzfe
+
+
+
+\BeginKnitrBlock{theorem}&lt;div class=&quot;theorem&quot;&gt;&lt;span class=&quot;theorem&quot; id=&quot;thm:unnamed-chunk-6&quot;&gt;&lt;strong&gt;(\#thm:unnamed-chunk-6) &lt;/strong&gt;&lt;/span&gt;Here is my theorem. $E=mc^2$&lt;/div&gt;\EndKnitrBlock{theorem}</code></pre>
+<ol style="list-style-type: decimal">
+<li>Réponse à la premier question <span class="math inline">\(E=mc^2\)</span>
+````</li>
+</ol>
+
+<div class="definition">
+<span id="def:unnamed-chunk-7" class="definition"><strong>Définition 6.1  </strong></span>Un court circuit est un circuit court..
+</div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="demo.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;bookdown&quot;</span>)</span>
+<span id="cb6-2"><a href="demo.html#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># or the development version</span></span>
+<span id="cb6-3"><a href="demo.html#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># devtools::install_github(&quot;rstudio/bookdown&quot;)</span></span></code></pre></div>
+<p>Et voici une équation inline <span class="math inline">\(E=mc^2\)</span>. Affichage d’un résultat avec SI units: <span class="math inline">\(\SI{3.2e12}{\kilo\gram\per\second}\)</span>. Ne fonctionne pas en HTML..</p>
+<p>Equation en ligne <span class="math display">\[2x  = 3 -\sqrt{2}\]</span></p>
+<p><span class="math display">\[\begin{align}
+x &amp;= 2x +5 \\
+-x &amp;= 5 \\
+x &amp;= -5 
+\end{align}\]</span></p>
+<p>Les vecteurs colonnes miam:
+<span class="math display">\[\overrightarrow{v(t)} = \begin{pmatrix}v_x(t) &amp;=&amp; x&#39;(t)\\
+v_y(t) &amp;=&amp; y&#39;(t)
+\end{pmatrix}\]</span></p>
+<p>Insérer une image en utilisant le code markdown
+<code>![image](figures/fig.png)</code></p>
+<div class="figure">
+<img src="figures/fig.png" alt="" />
+<p class="caption">image</p>
+</div>
+<p>En modifiant la largeur: 200px</p>
+<p><img src="figures/fig.png" alt="image réduite 200 pix" />{width: 200px;}</p>
+<p>En utilisant knitr:</p>
+<p><img src="figures/fig.png" width="50%" /></p>
+<p>Figures and tables with captions will be placed in <code>figure</code> and <code>table</code> environments, respectively</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="demo.html#cb7-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">&quot;figures/fig.png&quot;</span>)</span></code></pre></div>
+<div class="figure" style="text-align: center"><span id="fig:nice-fig"></span>
+<img src="figures/fig.png" alt="Here is a nice figure!" width="60%" />
+<p class="caption">
+Figure 6.1: Here is a nice figure!
+</p>
+</div>
+<div style="page-break-after: always;"></div>
+<p>Figures and tables with captions will be placed in <code>figure</code> and <code>table</code> environments, respectively</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="demo.html#cb8-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">&quot;figures/fig.png&quot;</span>)</span></code></pre></div>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-9"></span>
+<img src="figures/fig.png" alt="Here is a nice figure!" width="80%" />
+<p class="caption">
+Figure 6.2: Here is a nice figure!
+</p>
+</div>
+
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="rappels-de-chimie.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="methods.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="references.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
