@@ -18,6 +18,8 @@ transformation-chimique
 equilibrer-une-équation-chimique
 tableau-davancement
 réactions-acide-base
+couples-acidebase
+equation-de-réaction-entre-un-acide-et-une-base
 methods
 applications
 example-one
